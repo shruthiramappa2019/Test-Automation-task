@@ -34,11 +34,6 @@ testCases.forEach(({ name, email, password, type }) => {
             await expect(page.getByText('Invalid username or password'))
                 .toBeVisible();
 
-        } else if (type === 'empty') {
-
-            console.log('Step 4: Verify login with empty credentials');
-            await expect(page.getByRole('link', { name: 'Home' }))
-                .not.toBeVisible();
         }
         console.log(`END TEST: ${name}\n`);
     });

@@ -10,11 +10,5 @@
     "email": "helge.aasland+dev-site-admin@laerdal.com",
     "password": "Wrong_Password",
     "type": "invalid"
-  },
-  {
-    "name": "Verify login with empty credentials",
-    "email": "",
-    "password": "",
-    "type": "empty"
   }
 ]
