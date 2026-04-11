@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Verify user can login with valid credentials",
+    "email": "per.helge.aasland+dev-site-admin@laerdal.com",
+    "password": "perHelgeErSuperKul!",
+    "type": "success"
+  },
+  {
+    "name": "Verify user cannot login with invalid credentials",
+    "email": "helge.aasland+dev-site-admin@laerdal.com",
+    "password": "Wrong_Password",
+    "type": "invalid"
+  },
+  {
+    "name": "Verify login with empty credentials",
+    "email": "",
+    "password": "",
+    "type": "empty"
+  }
+]
