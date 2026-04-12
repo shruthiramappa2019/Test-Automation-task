@@ -24,12 +24,14 @@ test('Bulk upload the users from the file', async ({ page }) => {
     await usersPage.openUsersPage();
 
     console.log("Step 1: Navigate to Bulk Upload");
-
     await usersPage.openBulkUpload();
-
     const filePath = path.resolve(__dirname, '../test-data/users.csv');
+
     console.log("Step 2: Starting the Bulk Upload");
     await usersPage.uploadBulkUsers(filePath);
+
+    await expect(page.getByText('Bulk import complete')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByRole('heading', { name: 'Users', exact: true })).toBeVisible();
     console.log("Step 3: Bulk upload Completed");
 
 });

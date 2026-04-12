@@ -23,16 +23,15 @@ testCases.forEach(({ name, email, password, type }) => {
         if (type === 'success') {
 
             console.log('Step 4: Verify successful login');
-            await expect(page.getByRole('link', { name: 'Home' }))
-                .toBeVisible({ timeout: 5000 });
+            await expect(page.getByRole('link', { name: 'Home' })).toBeVisible({ timeout: 5000 });
             console.log('Step5: UI is shown within 5 seconds.');
+            await expect(page.getByRole('link', { name: 'LIFT Portal' })).toBeVisible();
 
 
         } else if (type === 'invalid') {
 
             console.log('Step 4: Verify error message');
-            await expect(page.getByText('Invalid username or password'))
-                .toBeVisible();
+            await expect(page.getByText('Invalid username or password')).toBeVisible();
 
         }
         console.log(`END TEST: ${name}\n`);
