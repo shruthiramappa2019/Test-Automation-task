@@ -5,11 +5,11 @@ export default defineConfig({
 
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 2 : undefined,
 
   use: {
     baseURL: 'https://lift-dev.training/',
-    headless: false,
+    headless: true,
     browserName: 'chromium',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

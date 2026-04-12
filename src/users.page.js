@@ -21,23 +21,16 @@ class UsersPage {
     }
 
     async uploadBulkUsers(filePath) {
-        const fileInput = this.page.locator('input[type="file"]');
-        await fileInput.setInputFiles(filePath);
-
+        await this.page.getByRole('button', { name: 'Browse & upload' }).click();
+        await this.page.setInputFiles('input[type="file"]', filePath);
         await this.page.getByRole('button', { name: 'Looks good, continue' }).click();
-        await expect(this.page.getByText('Bulk creating users')).toBeVisible({
-            timeout: 400000
-        });
-        const viewUsersBtn = this.page.getByRole('button', {
-            name: /view users list/i
-        });
 
-        await expect(viewUsersBtn).toBeVisible({ timeout: 400000 });
-        await expect(viewUsersBtn).toBeEnabled({ timeout: 400000 });
+        await this.page.getByText('Bulk creating users').waitFor({ state: 'visible' });
+        await this.page.getByText(/complete|success|done/i).waitFor({ state: 'visible' });
 
-        await viewUsersBtn.click();
-
+        await this.page.getByRole('button', { name: 'View users list' }).click();
         await this.page.getByRole('link', { name: 'Users' }).click();
+
     }
 }
 

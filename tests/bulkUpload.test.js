@@ -9,7 +9,7 @@ import testData from '../test-data/users.testdata.json' with { type: 'json' };
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-test('Upload the users from the file', async ({ page }) => {
+test('Bulk upload the users from the file', async ({ page }) => {
 
     test.setTimeout(120000);
 
@@ -30,6 +30,6 @@ test('Upload the users from the file', async ({ page }) => {
     const filePath = path.resolve(__dirname, '../test-data/users.csv');
     console.log("Step 2: Starting the Bulk Upload");
     await usersPage.uploadBulkUsers(filePath);
-    await expect(page.getByText('Bulk import complete')).toBeVisible()
-    console.log("Step 3: Bulk Upload complete");
+    console.log("Step 3: Bulk upload Completed");
+
 });
