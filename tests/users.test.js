@@ -15,6 +15,8 @@ test('It is possible to show the list of users', async ({ page }) => {
     await loginPage.login(email, password);
 
     await usersPage.openUsersPage();
+    console.log("Step1: Showing the list of users")
     await usersPage.verifyUsersTable();
+    console.log("End Test: VerifyUsersTable")
 
 });
