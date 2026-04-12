@@ -29,7 +29,10 @@ class UsersPage {
         await this.page.getByText(/complete|success|done/i).waitFor({ state: 'visible' });
 
         await this.page.getByRole('button', { name: 'View users list' }).click();
-        await this.page.getByRole('link', { name: 'Users' }).click();
+        await this.page.getByRole('alert').getByText('Close').click();
+
+
+        //await this.page.getByRole('link', { name: 'Users' }).click();
 
     }
 }
