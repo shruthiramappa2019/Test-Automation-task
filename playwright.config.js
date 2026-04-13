@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: './tests',
 
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 0 : 0,
   workers: process.env.CI ? 5 : undefined,
 
   use: {
