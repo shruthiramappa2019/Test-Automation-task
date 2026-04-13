@@ -9,7 +9,7 @@ export default defineConfig({
 
   use: {
     baseURL: 'https://lift-dev.training/',
-    headless: false,
+    headless: true,
     browserName: 'chromium',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
