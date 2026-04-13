@@ -33,11 +33,10 @@ jobs:
       - name: Run tests
         run: npx playwright test --reporter=html
 
-      - name: Upload Pages artifact
+      - name: Upload GitHub Pages artifact
         if: always()
         uses: actions/upload-pages-artifact@v3
         with:
-          name: playwright-report
           path: playwright-report/
 
   deploy:
