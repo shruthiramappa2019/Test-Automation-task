@@ -58,11 +58,9 @@ npm run report        # Opens the generated HTML report after execution
 
 
 ## Defects Identified
-- Two issues/bugs was identified during test execution and tickets are created in the github with all details
-- Bulk user upload validation issue  and CSV bulk upload fails with an unexpected error
-- Bulk user upload validation issue - https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
-- CSV bulk upload fails with an unexpected error - https://github.com/shruthiramappa2019/Test-Automation-task/issues/2
-
+- An issues was identified during test execution and ticket is created in the github with all details
+- Bulk upload partial failure despite successful user creation - https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
+- 
 ---
 
 ## How to Run Tests (For Non-Technical Users)
@@ -84,5 +82,11 @@ npm run report        # Opens the generated HTML report after execution
 5. npm run test:headed
 6. npm run report
 ```
+
+## Limitation ##
+1. Tests cover mainly the given test flows.
+2. Deployment is configured for local/CI only.
+3. Bulk upload test cases focus only on successful uploads with fewer than 5 users.
+
 ---~~
 
