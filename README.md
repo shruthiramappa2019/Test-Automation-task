@@ -58,9 +58,10 @@ npm run report        # Opens the generated HTML report after execution
 
 
 ## Defects Identified
-- An issue/bug was identified during test execution and a ticket is created in the github with all details :
-- Bulk user upload validation issue  
-- Issue git link: https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
+- Two issues/bugs was identified during test execution and tickets are created in the github with all details
+- Bulk user upload validation issue  and CSV bulk upload fails with an unexpected error
+- https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
+- https://github.com/shruthiramappa2019/Test-Automation-task/issues/2
 
 
 
