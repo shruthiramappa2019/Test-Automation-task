@@ -1,4 +1,4 @@
-~~# UI Test Automation – LIFT Portal
+# UI Test Automation – LIFT Portal
 
 ## Test Framework 
  Test Framework: Playwright Test using JavaScript with POM structure
@@ -60,10 +60,8 @@ npm run report        # Opens the generated HTML report after execution
 ## Defects Identified
 - Two issues/bugs was identified during test execution and tickets are created in the github with all details
 - Bulk user upload validation issue  and CSV bulk upload fails with an unexpected error
-- https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
-- https://github.com/shruthiramappa2019/Test-Automation-task/issues/2
-
-
+- Bulk user upload validation issue - https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
+- CSV bulk upload fails with an unexpected error - https://github.com/shruthiramappa2019/Test-Automation-task/issues/2
 
 ---
 
