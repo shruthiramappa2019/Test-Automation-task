@@ -34,7 +34,7 @@ testCases.forEach(({ name, email, password, type }) => {
             await expect(page.getByText('Invalid username or password')).toBeVisible();
 
         }
-        console.log(`END TEST: ${name}\n`);
+        console.log(`END TEST CASE 1: ${name}\n`);
     });
 
 });

@@ -32,6 +32,6 @@ test('Bulk upload the users from the file', async ({ page }) => {
     await usersPage.uploadBulkUsers(filePath);
     await expect(page.getByText('Bulk import complete')).toBeVisible({ timeout: 10000 });
     await expect(page.getByRole('heading', { name: 'Users', exact: true })).toBeVisible();
-    console.log("END TEST: Bulk Upload list of users");
+    console.log("END TEST CASE 3: Bulk Upload list of users");
 
 });
