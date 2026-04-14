@@ -58,7 +58,7 @@ npm run report        # Opens the generated HTML report after execution
 
 
 ## Defects Identified
-- two issues were identified during test execution and ticket were created in the github with all details.
+- Two issues were identified during test execution and ticket were created in the github with all details.
 - Bulk upload partial failure despite successful user creation - https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
 - File upload fails due to invalid or weak row-level data validation - https://github.com/shruthiramappa2019/Test-Automation-task/issues/3
 ---
@@ -86,7 +86,8 @@ npm run report        # Opens the generated HTML report after execution
 ## Limitation ##
 1. Tests cover mainly the given test flows.
 2. Deployment is configured for local/CI only.
-3. Bulk upload test cases focus only on successful uploads with fewer than 5 users.
+3. Bulk upload test cases cover successful uploads (small and bulk).
+   The “non-sync” message shown as “partially done” is confusing, but the script works as expected.
 
 ---~~
 
