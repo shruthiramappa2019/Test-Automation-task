@@ -13,10 +13,10 @@ test('It is possible to show the list of users', async ({ page }) => {
 
     await loginPage.open();
     await loginPage.login(email, password);
-    console.log("\nSTART TEST CASE 2 : Show Users List Test");
+    console.log("\nSTART TEST CASE 2 : Show Users List Test\n");
     await usersPage.openUsersPage();
     console.log("Step1: Showing the list of users")
     await usersPage.verifyUsersTable();
-    console.log(`End Test CASE 2: Showing the list of users`)
+    console.log(`\nEnd Test CASE 2: Showing the list of users\n`)
 
 });
