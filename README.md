@@ -58,9 +58,9 @@ npm run report        # Opens the generated HTML report after execution
 
 
 ## Defects Identified
-- An issues was identified during test execution and ticket is created in the github with all details
+- two issues were identified during test execution and ticket were created in the github with all details.
 - Bulk upload partial failure despite successful user creation - https://github.com/shruthiramappa2019/Test-Automation-task/issues/1
-- 
+- File upload fails due to invalid or weak row-level data validation - https://github.com/shruthiramappa2019/Test-Automation-task/issues/3
 ---
 
 ## How to Run Tests (For Non-Technical Users)
