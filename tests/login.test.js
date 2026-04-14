@@ -8,7 +8,7 @@ testCases.forEach(({ name, email, password, type }) => {
     test(name, async ({ page }) => {
         const loginPage = new LoginPage(page);
 
-        console.log(`\nSTART TEST: ${name}`);
+        console.log(`\nSTART TEST CASE 1 : ${name}`);
 
         console.log("Step1: Open Login page")
         await loginPage.open();
