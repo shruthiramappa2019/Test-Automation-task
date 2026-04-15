@@ -86,8 +86,9 @@ npm run report        # Opens the generated HTML report after execution
 ## Limitation ##
 1. Tests cover mainly the given test flows.
 2. Deployment is configured for local/CI only.
-3. Bulk upload test cases cover successful uploads (small and bulk).
-   The “non-sync” message shown as “partially done” is confusing, but the script works as expected.
+3. Bulk upload test cases covers successful upload of (small and bulk) user file.
+   The “alert” message shown as “partially done” is confusing for bulk upload, but the upload is completed and as expected.
+NOTE: Please change the data in users.csv file each time you want to run the application.
 
 ---~~
 
