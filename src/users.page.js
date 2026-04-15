@@ -18,8 +18,9 @@ class UsersPage {
         await this.page.getByRole('link', { name: 'Bulk import' }).click();
         await expect(this.page).toHaveURL(/.*bulk/i);
         await this.page.getByRole('link', { name: 'Next' }).click();
-        await expect(this.page.getByText(/upload/i)).toBeVisible();
+
         await this.page.getByTestId('RadioButtonOffIcon').click();
+        await expect(this.page.getByText(/upload/i)).toBeVisible();
         await this.page.getByRole('button', { name: 'Next' }).click();
     }
 

@@ -24,9 +24,9 @@ test('\n Bulk upload the users from the file', async ({ page }) => {
     await usersPage.openUsersPage();
     console.log("\nSTART TEST CASE 3 : Bulk Upload list of users\n");
     console.log("Step 1: Navigate to Bulk Upload");
+
     await usersPage.openBulkUpload();
     const filePath = path.resolve(__dirname, '../test-data/users.csv');
-
     console.log("Step 2: Starting the Bulk Upload");
     console.log("Step 3: Waiting for the Bulk Upload to finish");
     await usersPage.uploadBulkUsers(filePath);
